@@ -75,6 +75,8 @@ main {
 
 .title {
     margin: 10px auto;
+    font-weight:600 ;
+    color: hsl(234, 12%, 34%);
 }
 
 .define{
