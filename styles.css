@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Poppins";
+    background-color: hsl(0, 0%, 98%);
+    overflow-x: hidden;
+}
+
+
+
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+main {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sub-tagline {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+.main-tagline {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 10px;
+}
+
+.paragraph-tagline {
+    width: 500px;
+    color: hsl(229, 6%, 66%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(4, 110px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 80px auto;
+    
+}
+
+.container > div {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-content {
+    width: 287px;
+    height: 230px;
+    position:relative;
+}
+
+.title {
+    margin: 10px auto;
+}
+
+.define{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.icon {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+.item-1 { 
+    grid-area: 1 / 2 / 3 / 3;  
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.item-2 { 
+    grid-area: 3 / 2 / 5 / 3; 
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.item-3 { 
+    grid-area: 2 / 1 / 4 / 2; 
+    border-top:5px solid hsl(180, 62%, 55%);
+
+}
+
+.item-4 { 
+    grid-area: 2 / 3 / 4 / 4; 
+    border-top:5px solid hsl(212, 86%, 64%);
+}
+
+@media (max-width:1075px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 80px auto;
+    }
+
+    main {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .item-content {
+        margin: 20px;
+    }
+
+    header {
+          width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .paragraph-tagline {
+        width: 295px;
+    }
+}
